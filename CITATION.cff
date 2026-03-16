@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "DS2: Algebraic Toolkit for 2x2 Doubly Stochastic Matrices"
+version: 0.1.0
+date-released: 2026-03-16
+url: "https://github.com/davidtomfoss/ds2"
+license: BSD-3-Clause
+authors:
+  - family-names: Foss
+    given-names: David Tom
+    email: david@foss.com.de
+    orcid: "https://orcid.org/0009-0004-0289-7154"
+keywords:
+  - doubly stochastic matrices
+  - scattering matrix
+  - cascade analysis
+  - Birkhoff polytope
+references:
+  - type: conference-paper
+    authors:
+      - family-names: Foss
+        given-names: David Tom
+    title: "Algebraic Structure of Doubly Stochastic Power Matrices in Electromagnetic Scattering"
+    conference:
+      name: "ICEAA/APWC 2026"
+    year: 2026
+  - type: conference-paper
+    authors:
+      - family-names: Foss
+        given-names: David Tom
+    title: "The DS2 Toolkit: Algebraic Methods for Two-Port Network Analysis Across Thirteen Domains"
+    conference:
+      name: "ICEAA/APWC 2026"
+    year: 2026
