@@ -20,34 +20,34 @@ pip install ds2-toolkit
 ## Quick Start
 
 ```python
-import ds2
+import ds2_toolkit
 
 # Build a P(lambda) matrix
-P = ds2.matrix(0.7)
+P = ds2_toolkit.matrix(0.7)
 # array([[0.85, 0.15],
 #        [0.15, 0.85]])
 
 # Cascade 4 devices: just multiply eigenvalues
-result = ds2.cascade([0.9, 0.8, -0.5, 0.95])
+result = ds2_toolkit.cascade([0.9, 0.8, -0.5, 0.95])
 print(result.eigenvalue)          # -0.342
 print(result.insertion_loss_db)   # 3.33 dB
 
 # Analog error correction (k=3 repetition code)
-ds2.correct(0.3, k=3)  # 0.4365 — repels from 0
+ds2_toolkit.correct(0.3, k=3)  # 0.4365 — repels from 0
 
 # Compile a target IL from standard components
-r = ds2.compile(target_il=7.0)
+r = ds2_toolkit.compile(target_il=7.0)
 print(r.chain)   # ('6dB', '1dB')
 print(r.error_db) # 0.0
 
 # Landauer efficiency (quasistatic erasure)
-ds2.landauer_efficiency(delta_0=0.9, delta_f=0.1, k=100)
+ds2_toolkit.landauer_efficiency(delta_0=0.9, delta_f=0.1, k=100)
 # {'eta': 0.982, 'delta_h': 0.469, 'dissipation': 0.009, ...}
 
 # 13-domain universality
-ds2.domains.bsc(epsilon=0.1)          # 0.8
-ds2.domains.beam_splitter(reflectance=0.3)  # -0.4
-ds2.domains.scattering(s11_sq=0.3)    # -0.4
+ds2_toolkit.domains.bsc(epsilon=0.1)          # 0.8
+ds2_toolkit.domains.beam_splitter(reflectance=0.3)  # -0.4
+ds2_toolkit.domains.scattering(s11_sq=0.3)    # -0.4
 ```
 
 ## Five Tools
@@ -68,7 +68,7 @@ dividers, polarization (Malus's law), IIR filters, binary symmetric channels,
 synaptic transmission, gene regulation, and epidemic transmission.
 
 ```python
-from ds2.domains import DOMAIN_TABLE
+from ds2_toolkit.domains import DOMAIN_TABLE
 for d in DOMAIN_TABLE:
     print(f"{d['domain']:30s} lambda = {d['lambda']}")
 ```

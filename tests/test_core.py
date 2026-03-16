@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from ds2.core import (
+from ds2_toolkit.core import (
     eigenvalue,
     from_insertion_loss,
     insertion_loss,

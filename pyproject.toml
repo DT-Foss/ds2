@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ds2-toolkit"
-version = "0.1.0"
+version = "0.1.1"
 description = "Algebraic toolkit for 2x2 doubly stochastic matrices: cascade, entropy, correction, phase recovery, and compilation"
 readme = "README.md"
 license = "BSD-3-Clause"
@@ -57,7 +57,7 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "--cov=ds2 --cov-report=term-missing -v"
+addopts = "--cov=ds2_toolkit --cov-report=term-missing -v"
 
 [tool.ruff]
 target-version = "py310"

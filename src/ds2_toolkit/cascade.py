@@ -14,7 +14,7 @@ from typing import Sequence
 
 import numpy as np
 
-from ds2.core import insertion_loss, matrix
+from ds2_toolkit.core import insertion_loss, matrix
 
 
 @dataclass(frozen=True)

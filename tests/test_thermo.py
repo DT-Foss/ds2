@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from ds2.thermo import entropy, entropy_change, landauer_cost, landauer_efficiency
+from ds2_toolkit.thermo import entropy, entropy_change, landauer_cost, landauer_efficiency
 
 
 class TestEntropy:

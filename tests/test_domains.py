@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from ds2 import domains
+from ds2_toolkit import domains
 
 
 class TestDomainMappings:
@@ -87,7 +87,7 @@ class TestMonoidUniversality:
     """The cascade law lambda_total = prod(lambda_i) holds in every domain."""
 
     def test_cascade_scattering(self):
-        from ds2.core import matrix
+        from ds2_toolkit.core import matrix
         l1 = domains.scattering(0.3)
         l2 = domains.scattering(0.6)
         P1 = matrix(l1)
@@ -95,7 +95,7 @@ class TestMonoidUniversality:
         np.testing.assert_allclose(P1 @ P2, matrix(l1 * l2), atol=1e-15)
 
     def test_cascade_bsc(self):
-        from ds2.core import matrix
+        from ds2_toolkit.core import matrix
         l1 = domains.bsc(0.1)
         l2 = domains.bsc(0.2)
         np.testing.assert_allclose(

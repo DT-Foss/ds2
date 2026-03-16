@@ -2,7 +2,7 @@
 
 import pytest
 
-from ds2.compiler import STANDARD_LIBRARY, CompilerResult, compile
+from ds2_toolkit.compiler import STANDARD_LIBRARY, CompilerResult, compile
 
 
 class TestCompiler:

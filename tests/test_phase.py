@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from ds2.phase import (
+from ds2_toolkit.phase import (
     generate_test_unitary,
     phase_measurements_needed,
     recover_phase_2port,

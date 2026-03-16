@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from ds2.correction import (
+from ds2_toolkit.correction import (
     capacity,
     cascade_eigenvalue,
     cascade_with_correction,

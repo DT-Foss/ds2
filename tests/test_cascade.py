@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from ds2.cascade import cascade, link_budget
+from ds2_toolkit.cascade import cascade, link_budget
 
 
 class TestCascade:
@@ -41,7 +41,7 @@ class TestCascade:
 
     def test_il_additive(self):
         """IL in dB should be additive under cascade (positive eigenvalues)."""
-        from ds2.core import insertion_loss
+        from ds2_toolkit.core import insertion_loss
         evs = [0.9, 0.8, 0.7]
         r = cascade(evs)
         # log|lambda| is additive: log|prod| = sum(log|lambda_i|)

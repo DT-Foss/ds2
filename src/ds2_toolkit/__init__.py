@@ -15,11 +15,11 @@ Universal across 13 domains (domains).
 
 Example::
 
-    >>> import ds2
-    >>> P = ds2.matrix(0.7)
-    >>> ds2.cascade([0.9, 0.8, -0.5, 0.95])
+    >>> import ds2_toolkit
+    >>> P = ds2_toolkit.matrix(0.7)
+    >>> ds2_toolkit.cascade([0.9, 0.8, -0.5, 0.95])
     CascadeResult(eigenvalue=-0.342, insertion_loss_db=...)
-    >>> ds2.correct(0.3, k=3)
+    >>> ds2_toolkit.correct(0.3, k=3)
     0.4365...
 
 References:
@@ -30,15 +30,15 @@ References:
     Analysis Across Thirteen Domains," Proc. ICEAA/APWC, Toyama, 2026.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
-from ds2.core import matrix, eigenvalue, insertion_loss, from_insertion_loss
-from ds2.cascade import cascade, CascadeResult
-from ds2.thermo import entropy, entropy_change, landauer_cost, landauer_efficiency
-from ds2.correction import correct, correction_polynomial, duality_fixed_points
-from ds2.phase import recover_phase_2port
-from ds2.compiler import compile, CompilerResult, STANDARD_LIBRARY
-from ds2 import domains
+from ds2_toolkit.core import matrix, eigenvalue, insertion_loss, from_insertion_loss
+from ds2_toolkit.cascade import cascade, CascadeResult
+from ds2_toolkit.thermo import entropy, entropy_change, landauer_cost, landauer_efficiency
+from ds2_toolkit.correction import correct, correction_polynomial, duality_fixed_points
+from ds2_toolkit.phase import recover_phase_2port
+from ds2_toolkit.compiler import compile, CompilerResult, STANDARD_LIBRARY
+from ds2_toolkit import domains
 
 __all__ = [
     "__version__",
