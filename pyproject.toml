@@ -7,7 +7,7 @@ name = "ds2-toolkit"
 version = "0.1.1"
 description = "Algebraic toolkit for 2x2 doubly stochastic matrices: cascade, entropy, correction, phase recovery, and compilation"
 readme = "README.md"
-license = "BSD-3-Clause"
+license = "PolyForm-Noncommercial-1.0.0"
 requires-python = ">=3.10"
 authors = [
     {name = "David Tom Foss", email = "david@foss.com.de"},

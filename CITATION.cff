@@ -5,7 +5,7 @@ title: "DS2: Algebraic Toolkit for 2x2 Doubly Stochastic Matrices"
 version: 0.1.0
 date-released: 2026-03-16
 url: "https://github.com/davidtomfoss/ds2"
-license: BSD-3-Clause
+license: PolyForm-Noncommercial-1.0.0
 authors:
   - family-names: Foss
     given-names: David Tom

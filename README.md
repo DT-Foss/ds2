@@ -2,7 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/ds2-toolkit)](https://pypi.org/project/ds2-toolkit/)
 [![Python](https://img.shields.io/pypi/pyversions/ds2-toolkit)](https://pypi.org/project/ds2-toolkit/)
-[![License](https://img.shields.io/pypi/l/ds2-toolkit)](https://github.com/davidtomfoss/ds2/blob/main/LICENSE)
+[![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/License-PolyForm%20Noncommercial%201.0.0-blue.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen)]()
 
 **One scalar replaces four complex scattering parameters.**
@@ -82,4 +82,4 @@ for d in DOMAIN_TABLE:
 
 ## License
 
-BSD 3-Clause. See [LICENSE](LICENSE).
+PolyForm Noncommercial License 1.0.0. See [LICENSE](LICENSE). Commercial licenses: Wirkung Inc. (d.foss@ieee.org).
